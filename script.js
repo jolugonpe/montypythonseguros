@@ -52,7 +52,7 @@
 })();
 
 
-//Seguros
+//Seguros - Desplegado
 (function(){
     const titleSeguros = [...document.querySelectorAll('.seguros__title')];
     console.log(titleSeguros)
@@ -76,3 +76,13 @@
 })();
 
 
+//Validación de Formulario
+const email = document.getElementById("mail");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("¡Se esperaba una dirección de correo electrónico!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
