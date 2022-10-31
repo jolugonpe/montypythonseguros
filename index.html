@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/143f0dc1ce.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>MontyPython Seguros</title>
+    <link rel="shortcut icon" href="img/MPicon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+
+    <header class="encabezado">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="index.html"><img src="img/MPlogo.png" alt="logo" width="125px"></a>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#inicio" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#nosotros" class="nav__links">Nosotros</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#seguros" class="nav__links" id="desplegable">Seguros</a>
+                    <ul class="submenu">
+                        <li class="submenu__items">
+                            <a href="#" class="submenu__links">Hogar</a>
+                        </li> 
+                        <li class="submenu__items">
+                            <a href="#" class="submenu__links">Autos</a>
+                        </li>
+                        <li class="submenu__items">
+                            <a href="moto.html" class="submenu__links">Motos</a>
+                        </li>
+                        <li class="submenu__items">
+                            <a href="#" class="submenu__links">Empresas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__items">
+                    <a href="#contacto" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="img/xmenu.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="img/menuhamb.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="encabezado__container container">
+            <h1 class="encabezado__title">Confía en nosotros lo que más te importa.</h1>
+            <p class="encabezado__paragraph">Por mas de 3500 años cuidando cada paso que das, ajustandonos a tu 
+                necesidad para que puedas vivir la vida sin preocupaciones.</p>
+            <a href="#contacto" class="cta">Contactanos ahora</a>
+        </section>
+    </header>
+  
+    <main>
+        <section class="container about">
+            <h2 class="subtitle" id="inicio">Una solución para cada momento</h2>
+            <p class="about__paragraph">Desde 1750 a.C. Monty Python ha sido parte de la historia,
+                ajustandose a la necesidad de cada quien</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="img/home.svg" class="about__icon">
+                    <h3 class="about__title">HOGAR</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="img/car.svg" class="about__icon">
+                    <h3 class="about__title">AUTOS/MOTOS</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="img/company.svg" class="about__icon">
+                    <h3 class="about__title">EMPRESAS</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis</p>
+                </article>
+            </div>
+        </section>
+     
+        <section class="carousel">
+            <div class="carousel__container container">
+                <img src="img/leftarrow.svg" class="carousel__arrow" id="before">
+
+                <section class="carousel__body carousel__body--show" data-id="1">
+                    <figure class="carousel__picture">
+                        <img src="img/carousel/mpcarousel.png" class="carousel__img">
+                    </figure>
+                </section>
+
+                <section class="carousel__body" data-id="2">
+                    <figure class="carousel__picture">
+                        <img src="img/carousel/autocarousel.png" class="carousel__img">
+                    </figure>
+                </section>
+
+                <section class="carousel__body" data-id="3">
+                    <figure class="carousel__picture">
+                        <img src="img/carousel/motocarousel.png" class="carousel__img">
+                    </figure>
+                </section>
+
+                <section class="carousel__body" data-id="4">
+                    <figure class="carousel__picture">
+                        <img src="img/carousel/hogarcarousel.png" class="carousel__img">
+                    </figure>
+                </section>
+
+                <section class="carousel__body" data-id="4">
+                    <figure class="carousel__picture">
+                        <img src="img/carousel/empresacarousel.png" class="carousel__img">
+                    </figure>
+                </section>
+
+                <img src="img/rightarrow.svg" class="carousel__arrow" id="next">
+            </div>
+        </section>
+        
+        <section class="historia" id="nosotros">
+            <div class="historia__container container">
+                <div class="historia__texts">
+                    <h2 class="subtitle">Desde el Código Hammurabi hasta la actualidad. ¡Haciendo Historia!</h2>
+                    <p class="historia__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
+                        aliquam nemo in facere suscipit at delectus unde labore ad officia iste accusantium eaque
+                        aperiam laborum est voluptate totam? Modi, obcaecati?</p>
+                    <a href="#historia" class="cta">Saber más</a>
+                </div>
+
+                <figure class="historia__picture">
+                    <img src="img/codigo-hammurabi.jpeg" class="historia__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="seguros container" id="seguros">
+            <h2 class="subtitle">Nuestros Seguros</h2>
+            <p class="seguros__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
+                doloribus neque perspiciatis sapiente fuga.</p>
+
+            <section class="seguros__container">
+                <article class="seguros__padding">
+                    <div class="seguros__answer">
+                        <h3 class="seguros__title">HOGAR
+                            <span class="seguros__arrow">
+                                <img src="img/chevronsdowns.svg" class="seguros__img">
+                            </span>
+                        </h3>
+
+                        <p class="seguros__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?
+                            <br>
+                        <a href="#" class="cta__seguros">Saber más</a>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="seguros__padding">
+                    <div class="seguros__answer">
+                        <h3 class="seguros__title">AUTOS
+                            <span class="seguros__arrow">
+                                <img src="img/chevronsdowns.svg" class="seguros__img">
+                            </span>
+                        </h3>
+
+                        <p class="seguros__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?
+                            <br>
+                            <a href="#" class="cta__seguros">Saber más</a>
+                            </p>
+                    </div>
+                </article>
+
+                <article class="seguros__padding">
+                    <div class="seguros__answer">
+                        <h3 class="seguros__title">MOTOS
+                            <span class="seguros__arrow">
+                                <img src="img/chevronsdowns.svg" class="seguros__img">
+                            </span>
+                        </h3>
+
+                        <p class="seguros__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?
+                            <br>
+                            <a href="moto.html" class="cta__seguros">Saber más</a>
+                            </p>
+                    </div>
+                </article>
+
+                <article class="seguros__padding">
+                    <div class="seguros__answer">
+                        <h3 class="seguros__title">EMPRESAS
+                            <span class="seguros__arrow">
+                                <img src="img/chevronsdowns.svg" class="seguros__img">
+                            </span>
+                        </h3>
+
+                        <p class="seguros__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?
+                            <br>
+                            <a href="#" class="cta__seguros">Saber más</a>
+                            </p>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="contacto" id="contacto">
+                <h2 class="subtitle">¿Quieres saber más?</h2>
+                <p class="contactos__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ratione
+                    architecto magnam, officiis ex porro vero est voluptates quaerat quibusdam illo veniam reprehenderit
+                    eius atque tempora iure ab non autem.</p>
+                
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <form action="">
+                    <p>
+                        <label>Nombre Completo</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>E-mail</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Teléfono</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Más Información</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> CAlle Falsa 123, CABA</li>
+                    <li><i class="fas fa-phone"></i> (0800) 55 55 5-rriente</li>
+                    <li><i class="fas fa-envelope-open-text"></i> contact@website.com</li>
+                </ul>
+            </div>
+        </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <a href="index.html"><img src="img/MPlogoFooter.png" alt="logo" width="125px"></a>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#inicio" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#nosotros" class="nav__links">Nosotros</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#seguros" class="nav__links">Seguros</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#contacto" class="nav__links">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/" class="footer__icons"><img src="img/facebook.svg" class="footer__img"></a>
+                <a href="https://twitter.com/?lang=es" class="footer__icons"><img src="img/twitter.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/" class="footer__icons"><img src="img/instagram.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; JLGP-MontyPython</h3>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+  
+  </html>
