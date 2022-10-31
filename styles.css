@@ -340,6 +340,10 @@ body {
 }
 
 /* Contactos */
+form {
+    display: block;
+    width: 100%;
+}
 .contactos__paragraph{
     width: 60%;
     margin: 0 auto;
@@ -368,10 +372,11 @@ ul {
 
 .contact-form form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
 }
 
-.contact-form form label {
+.contact-form form label, select {
     display: block;
 }
 
@@ -385,7 +390,7 @@ ul {
 }
 
 .contact-form form input,
-.contact-form form textarea {
+.contact-form form textarea, select {
     width: 100%;
     padding: .7em;
     border: none;
@@ -412,7 +417,7 @@ ul {
     text-align: center;
     margin: 0 0 1rem 0;
 }
-
+ 
 /* Footer */
 .footer{
     background-color: #1D293F;

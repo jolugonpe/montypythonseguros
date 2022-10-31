@@ -246,26 +246,35 @@
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
                 <form action="">
-                    <p>
-                        <label>Nombre Completo</label>
-                        <input type="text" name="fullname">
-                    </p>
-                    <p>
-                        <label>E-mail</label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Teléfono</label>
-                        <input type="tel" name="phone">
-                    </p>
-                    <p>
-                        <label>Asunto</label>
-                        <input type="text" name="affair">
-                    </p>
-                    <p class="block">
-                       <label>Mensaje</label> 
-                        <textarea name="message" rows="3"></textarea>
-                    </p>
+                    <fieldset>
+                        <p>
+                            <label>Nombre Completo</label>
+                            <input type="text" name="fullname" placeholder="First and Last" required="">
+                        </p>
+                        <p>
+                            <label>E-mail</label>
+                            <input type="email" name="email" placeholder="email@domain.tld" required="">
+                        </p>
+                        <p>
+                            <label>Teléfono</label>
+                            <input type="tel" name="phone" placeholder="11 5555-5555" required="">
+                        </p>
+                        <p>
+                            <label>Seguro</label>
+                            <select name="department" id="department" required="">
+                            <option value="" selected="" disabled="">Seleccione</option>
+                            <option value="Front Desk">Hogar</option>
+                            <option value="Customer Care">Autos</option>
+                            <option value="Shipping Receiving">Motos</option>
+                            <option value="Billing Accounting">Empresas</option>
+                            </select>
+                        </p>
+                        <p class="block">
+                        <label>Mensaje</label> 
+                            <textarea name="message" rows="3" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                        </p>
+                        <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+                    </fieldset>
                     <p class="block">
                         <button>
                             Enviar
