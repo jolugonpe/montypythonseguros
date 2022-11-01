@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>Motos - MP Seguros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>MontyPython Seguros</title>
     <link rel="shortcut icon" href="img/MPicon.png">
     <link rel="stylesheet" href="stylesmoto.css">
   </head>
@@ -18,21 +19,35 @@
     <header class="encabezado">
         <nav class="nav container">
             <div class="nav__logo">
-                <img src="img/MPlogo.png" alt="logo" width="125px">
+                <a href="index.html"><img src="img/MPlogo.png" alt="logo" width="125px"></a>
             </div>
 
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
-                    <a href="index.html" class="nav__links">Inicio</a>
+                    <a href="#inicio" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Nosotros</a>
+                    <a href="#nosotros" class="nav__links">Nosotros</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Seguros</a>
+                    <a href="#seguros" class="nav__links" id="desplegable">Seguros</a>
+                    <ul class="submenu">
+                        <li class="submenu__items">
+                            <a href="#" class="submenu__links">Hogar</a>
+                        </li> 
+                        <li class="submenu__items">
+                            <a href="#" class="submenu__links">Autos</a>
+                        </li>
+                        <li class="submenu__items">
+                            <a href="moto.html" class="submenu__links">Motos</a>
+                        </li>
+                        <li class="submenu__items">
+                            <a href="#" class="submenu__links">Empresas</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                    <a href="#contacto" class="nav__links">Contacto</a>
                 </li>
 
                 <img src="img/xmenu.svg" class="nav__close">
@@ -46,8 +61,10 @@
         <section class="encabezado__container container">
             <h1 class="encabezado__title">Cotiza tu seguro de moto online y Ahorra un 15%.</h1>
             <p class="encabezado__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
-                porro eius facilis</p>
-            <a href="#" class="cta">Contactanos ahora</a>
+                porro eius facilis.<br>
+                <img class="animate__animated animate__flip animate__infinite	infinite" src="img/animacion.svg" alt="animacion">
+            </p>
+            <a href="#contacto" class="cta">Contactanos ahora</a>
         </section>
     </header>
   
@@ -58,44 +75,44 @@
 
             <div class="price__table">
                 <div class="price__element">
-                    <p class="price__name">Flexbox</p>
-                    <h3 class="price__price">Free</h3>
+                    <p class="price__name">Responsabilidad Civil</p>
+                    <h3 class="price__price">$1500/mes</h3>
 
                     <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Layouts</p>
-                        <p class="price__features">Responsive</p>
+                        <p class="price__features">Responsabilidad Civil</p>
+                        <p class="price__features">Asistencia Mecánica</p>
+                        <p class="price__features">Remolque</p>
                     </div>
 
-                    <a href="#" class="price__cta">Empieza ahora</a>
+                    <a href="#" class="price__cta">Cotiza ahora</a>
                 </div>
 
 
                 <div class="price__element price__element--best">
-                    <p class="price__name">Grid</p>
-                    <h3 class="price__price">$30/mes</h3>
+                    <p class="price__name">Total B</p>
+                    <h3 class="price__price">$3000/mes</h3>
 
                     <div class="price__items">
-                        <p class="price__features">Grid</p>
-                        <p class="price__features">Implicit Grid</p>
-                        <p class="price__features">Responsive</p>
+                        <p class="price__features">Todo de Responsabilidad Civil +</p>
+                        <p class="price__features">Reposición de 0km</p>
+                        <p class="price__features">Robo Total</p>
                     </div>
 
-                    <a href="#" class="price__cta">Empieza ahora</a>
+                    <a href="#" class="price__cta">Cotiza ahora</a>
                 </div>
 
 
                 <div class="price__element">
-                    <p class="price__name">Animaciones</p>
-                    <h3 class="price__price">$40/mes</h3>
+                    <p class="price__name">Total A</p>
+                    <h3 class="price__price">$4500/mes</h3>
 
                     <div class="price__items">
-                        <p class="price__features">Animation</p>
-                        <p class="price__features">Transition</p>
-                        <p class="price__features">Render Website</p>
+                        <p class="price__features">Todo Total B +</p>
+                        <p class="price__features">Incendio total</p>
+                        <p class="price__features">Daño total por accidente</p>
                     </div>
 
-                    <a href="#" class="price__cta">Empieza ahora</a>
+                    <a href="#" class="price__cta">Cotiza ahora</a>
                 </div>
 
 
@@ -107,38 +124,31 @@
     <footer class="footer">
         <section class="footer__container container">
             <nav class="nav nav--footer">
-                <img src="img/MPlogoFooter.png" alt="logo" width="125px">
+                <a href="index.html"><img src="img/MPlogoFooter.png" alt="logo" width="125px"></a>
 
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Inicio</a>
+                        <a href="#inicio" class="nav__links">Inicio</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Acerca de</a>
+                        <a href="#nosotros" class="nav__links">Nosotros</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Seguros</a>
+                        <a href="#seguros" class="nav__links">Seguros</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Contacto</a>
+                        <a href="#contacto" class="nav__links">Contacto</a>
                     </li>
                 </ul>
             </nav>
 
-            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
-                <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-                    <input type="submit" value="Registrate" class="footer__submit">
-                </div>
-            </form>
         </section>
 
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="#" class="footer__icons"><img src="img/facebook.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="img/twitter.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="img/instagram.svg" class="footer__img"></a>
+                <a href="https://www.facebook.com/" class="footer__icons"><img src="img/facebook.svg" class="footer__img"></a>
+                <a href="https://twitter.com/?lang=es" class="footer__icons"><img src="img/twitter.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/" class="footer__icons"><img src="img/instagram.svg" class="footer__img"></a>
             </div>
 
             <h3 class="footer__copyright">Derechos reservados &copy; JLGP-MontyPython</h3>
